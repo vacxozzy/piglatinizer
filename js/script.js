@@ -6,9 +6,16 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
+	
 
-
+	$("button").click(function(){
+		var userInput = $("input").val();
+		var finalResult = pigLatinizer(userInput);
+		$("#results").text(finalResult);
+			function pigLatinizer(word){
+				return word + "ay";    
+			}
+	});
 
 });
 
