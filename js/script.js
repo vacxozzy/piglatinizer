@@ -7,19 +7,15 @@
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
 	$("#submit").click(function(){
-			function wordToPigLatin(word){
-				var userInput = $("input").val();
-				var finalResult = wordToPigLatin(userInput);
-					if (word.charAt(0) === "a", "e", "i", "o", "u") {
-							return word + word.charAt(0) + "yay";
-							// $("#results").text(finalResult);
-						} else {
-							return word + word.charAt(0) + "ay"
-							// $("#results").text(finalResult);
-					}
+		var userInput = $("input").val();
+		var finalResult = wordToPigLatin(userInput);
+		function wordToPigLatin(userInput){
+			if (userInput.charAt(0) === "a", "e", "i", "o", "u") {
+				return userInput + userInput.charAt(0) + "yay";
+			} else {
+				return userInput + userInput.charAt(0) + "ay"
 			}
-			
-		
+		}
 	});
 });
 
